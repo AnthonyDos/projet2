@@ -1,0 +1,312 @@
+/*==========style de la page===========*/
+body {
+    background-color: #ffffff;
+    font-family: Arial,sans-serif;
+    font-size: 0.8em;
+    color: black;
+    max-width: 900px;
+    margin: auto;
+    border-right: 1px solid;
+    border-left: 1px solid ;
+}
+.container {
+	display:flex;
+    height:auto;
+   
+}
+/*==================================header===============================*/
+header {
+	display:flex;
+	width:100%;
+}
+header .image {
+	width:30%;
+	background-color:#00E5ff;
+    text-align:center;
+}
+header .anthony {
+    border-radius:50%;
+	width:150px;
+	height:150px;
+    border:2px solid gray;
+    margin-top:15%;
+    margin-bottom:10%;
+}
+
+
+/*============titres de page============*/
+            
+header .titrehaut { display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:flex-start;
+    padding-left:6%;
+    line-height:0;
+}
+header h1 {
+	font-size:40px;
+}
+ header h2 {
+ 	font-size:x-large;
+ }
+ header .deve{
+    border-bottom: 2px solid #00E5FF;
+ }
+header .antony{
+	color:#00E5FF;
+}
+
+/*============Partie information=============*/
+
+.info {
+	width:30%;
+	
+	background-color:#00E5FF
+}
+.info h3 {
+	background-color:gray;
+    text-transform: uppercase;	
+    color:#00E5FF;
+	text-align:center;
+	padding:10px;
+	font-size:large;
+	font-weight:bold;
+
+}
+
+.info .contact {
+	padding:5px 20px 5px 20px;
+	font-size:14px;
+}
+
+.info .propos {
+	text-align:justify;
+	padding:5px 20px 212% 20px;
+	font-size:14px;
+	color:gray;
+	font-weight:bold;
+
+}
+.contact p{
+	color:gray;
+	font-weight:bold;
+}
+.contact a {
+	text-decoration:none;
+	color:gray;
+	font-weight:bold;
+}
+
+.info .loisirs {
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+
+}
+
+.info .loisirs i {
+    border-radius:50%;
+	width:50px;
+	height:50px;
+	max-width: 50px;
+	max-height: 50px;
+	min-width: 46px;
+	min-height: 46px;
+	font-size:30px;
+    border:2px solid gray;
+    display: flex;
+	justify-content:  center;
+	align-items: center;
+	margin-top:10px;
+	color:gray;
+}
+
+/*=====================Partie centrale====================*/
+
+          /*==========titres=========*/
+.emploi {
+	width:60%;
+}
+.titre {
+    display:inline-flex;
+    border-bottom: 2px solid #00E5FF;
+    text-transform: uppercase;
+    align-items: center;  	
+    font-size:large;  
+	width:90%;
+    margin-left:10%
+}
+.titre i {
+	font-size:28px;
+	color:#00E5FF;
+}
+.titres {
+	padding-left:3%;
+    text-transform: uppercase;
+}
+
+         /*==========corps de la page=========*/
+.date {
+	display:flex;
+	margin-left:10%;
+	width:auto;
+	margin-left:10%;
+	font-size:14px;	
+}
+.datei{
+	display:flex;
+	align-items:flex-start;
+	text-align:start;
+	margin-top:5%;
+	color:gray;
+	font-weight:bold;
+}
+.societe {
+	font-size:18px;
+	font-weight:bold;
+}
+
+.description {
+	display:flex;
+	flex-direction:column;
+	text-align:justify;
+	margin-left:10%;
+	color:gray;	
+}
+
+
+.recommanda  {
+	display:flex;
+	justify-content:space-around;
+	font-weight:bold;
+}
+
+.recommanda a {
+	text-decoration:none;
+	line-height:0;
+	color:black;	
+}
+
+
+
+/*======================Media queries max 900Px========================*/
+
+@media screen and (max-width: 900px)
+{    
+    /*======Mise en page général=======*/
+    .bloc_page {
+    	width:auto;  	
+    }
+    
+
+	/*==========header==========*/
+	header {
+		display:flex;
+		flex-direction:column;
+		align-items:center;
+		justify-content:space-around;
+	}
+	
+	header .image{
+       		width:100%;
+	}
+	
+	header .anthony{
+        margin-top:30px;
+        margin-bottom:30px;
+	}
+
+	header .titrehaut{
+		margin:0;
+	}
+
+    .container {
+		display:flex;
+		flex-direction:column;
+	}
+
+	/*==========section emploi===========*/
+	.emploi{
+		order:0;
+		padding-top:10px;
+		padding-bottom:10px;
+		width:auto;	
+	}
+		
+    .emploi{
+		order:0;
+	}
+	.titre {
+		width:80%;
+	}
+	
+	.description {
+		text-align:justify;
+		width:40%
+	}
+	
+    .datei  {
+    	width:auto;
+    	text-align:justify;
+    	margin-top:3%;    	 	
+    }
+      
+    .info {
+		order:1;
+		width:100%;
+	}
+	.contact {
+		text-align:center;
+	}
+	.info .propos{
+		padding-bottom:0
+	}
+	.loisirs {
+		padding-bottom:3%;
+	}
+}
+
+
+/*===================media queries max 838px============*/
+
+@media screen and (max-width: 480px)
+{
+	
+  /*========header=========*/ 
+   
+    header .image{
+       		width:100%;
+	}
+
+    header h1 {
+		font-size:20px;
+		text-align:center;
+	}
+	header h2 {
+		font-size:12px
+	}
+	
+	header .anthony{
+        margin-top:30px;
+        margin-bottom:30px;
+
+	}
+
+	/*==========section emploi=========*/
+	.titre {
+		font-size:12px;
+	}
+	
+    .datei {
+    	display:flex;
+    	padding-top:5%;
+    	
+    }
+	
+	.recommanda {
+		display:flex;
+	    flex-direction:column;
+	    text-align:center;
+	    width:100%;
+	}
+}
