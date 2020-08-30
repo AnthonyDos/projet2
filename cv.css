@@ -189,9 +189,9 @@ header .antony{
 
 
 
-/*======================Media queries max 900Px========================*/
+/*======================Media queries max 990Px========================*/
 
-@media screen and (max-width: 900px)
+@media screen and (max-width: 990px)
 {    
     /*======Mise en page général=======*/
     .bloc_page {
@@ -267,9 +267,9 @@ header .antony{
 }
 
 
-/*===================media queries max 838px============*/
+/*===================media queries max 768px============*/
 
-@media screen and (max-width: 480px)
+@media screen and (max-width: 768px)
 {
 	
   /*========header=========*/ 
@@ -296,12 +296,6 @@ header .antony{
 	.titre {
 		font-size:12px;
 	}
-	
-    .datei {
-    	display:flex;
-    	padding-top:5%;
-    	
-    }
 	
 	.recommanda {
 		display:flex;
