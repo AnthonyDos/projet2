@@ -179,6 +179,7 @@ header .antony{
 	display:flex;
 	justify-content:space-around;
 	font-weight:bold;
+	margin-left: 6px;
 }
 
 .recommanda a {
@@ -263,6 +264,9 @@ header .antony{
 	}
 	.loisirs {
 		padding-bottom:3%;
+	}
+	.recommanda {
+		margin-right:20%;
 	}
 }
 
